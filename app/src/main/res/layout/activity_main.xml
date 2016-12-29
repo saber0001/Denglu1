@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/image4"
+    tools:context="com.denglu.MainActivity">
+
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="用户名"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/name_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/left"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/left"
+        android:hint="请输入用户名"/>
+    <TextView
+        android:id="@+id/mima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="密\t\t码"
+        android:layout_below="@+id/left"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/enter_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_enter"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/mima"
+        android:paddingLeft="10dp"
+        android:hint="请输入密码"
+        android:layout_toRightOf="@+id/mima"/>
+
+    <Button
+        android:text="注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="129dp"
+        android:id="@+id/button1"
+        android:layout_below="@+id/enter_password"
+        android:layout_alignLeft="@+id/name_enter"
+        android:layout_alignStart="@+id/name_enter"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+</RelativeLayout>

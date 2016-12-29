@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/image5">
+
+    <TextView
+        android:id="@+id/name_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="用户名"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/name_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name_left"
+        android:layout_toRightOf="@+id/name_left"
+        android:hint="请输入用户名"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/mima_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_left"
+        android:layout_marginTop="10dp"
+        android:text="密\t\t\t码"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_register"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/mima_left"
+        android:layout_toRightOf="@+id/mima_left"
+        android:hint="请输入密码"/>
+    <TextView
+        android:id="@+id/queren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mima_left"
+        android:text="确认密码"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/register_quepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/queren"
+        android:layout_below="@+id/password_register"
+        android:layout_toRightOf="@+id/queren"
+        android:gravity="center"
+        android:hint="请再次确认密码"/>
+
+    <Button
+        android:text="清空"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:id="@+id/clear"
+        android:layout_below="@+id/register_quepassword"
+        android:layout_alignLeft="@+id/name_register"
+        android:layout_alignStart="@+id/name_register" />
+
+    <Button
+        android:text="提交"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_alignBaseline="@+id/clear"
+        android:layout_alignBottom="@+id/clear"
+        android:layout_toRightOf="@+id/clear"
+        android:layout_toEndOf="@+id/clear"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp" />
+
+</RelativeLayout>
